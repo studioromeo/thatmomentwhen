@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>That Moment When</title>
+	<link href='/style.css' rel='stylesheet'>
+</head>
+<body>
+	{% for post in site.posts %}
+		<a href="http://youtube.com/watch?v={{post.youtube}}"><img src="http://img.youtube.com/vi/{{post.youtube}}/0.jpg" /></a>
+	{% endfor %}
+</body>
+</html>
