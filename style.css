@@ -12,7 +12,7 @@ a img{border:0 none;}
 
 /* Begin Styles ==== */
 body {
-	background: #222 url(bg.png);
+	background: #222 url('./bg.png');
 }
 
 html {
