@@ -8,23 +8,47 @@ blockquote,q{quotes:;}
 a img{border:0 none;}
 
 
-
-
 /* Begin Styles ==== */
 body {
 	background: #222 url('./bg.png');
+	font-family: sans-serif;
 }
 
-html {
-
+#wrapper a {
+	background: #000;
+	display: block;
+	width: 250px;
+	height: auto;
+	position: relative;
+	text-decoration: none;
+	color: white;
+	border: 5px;
+	margin: 20px;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.7);
+	float: left;
+	font-weight: bold;
+	font-size: 14px;
 }
 
-/*#wrapper {
-	width: 758px;
-	margin: 0 auto;
-	background: url(inner.png);
-	border: 20px solid #382201;
-	border-image: url(wood.png) 25% repeat;
-	border-top: 0;
-	border-bottom: 0;
-}*/
+#wrapper a div {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: orange;
+	text-align: center;
+	padding: 20px;
+	opacity: .8;
+	padding-top: 50px;
+	-webkit-transition: .5s all ease;
+}
+
+#wrapper a:nth-child(4n-1) div{ background: red; }
+#wrapper a:nth-child(4n-2) div{ background: green; }
+#wrapper a:nth-child(4n-3) div{ background: purple; }
+#wrapper a:nth-child(4n-4) div{ background: orange; }
+
+#wrapper a:hover div { opacity: 0 }
+
+#wrapper a img { width: 100%; }
