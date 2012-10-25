@@ -1,2 +1,1 @@
-url: /
-permalink: /:year:month:day/:title.html
+permalink: :year:month:day/:title.html
