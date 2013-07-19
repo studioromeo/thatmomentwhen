@@ -3,12 +3,10 @@ layout: base
 ---
 
 {% for post in site.posts %}
-<a href="{{post.url}}">
+<a href="{{ site.baseurl }}{{post.url}}">
 	<img src="http://img.youtube.com/vi/{{post.youtube}}/0.jpg" />
 	<div>
 		{{post.title}}
 	</div>
 </a>
 {% endfor %}
-
-{{ site.baseurl }}
